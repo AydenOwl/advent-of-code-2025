@@ -18,5 +18,6 @@ fun getDoorPassword(): Unit {
         secretEntrance.moveTo(direction, step)
     }
 
-    println("The door password is ${secretEntrance.pointedCounter}")
+    secretEntrance.displayDefaultMethodPassword()
+    secretEntrance.display0x434C49434BMethodPassword()
 }
