@@ -4,13 +4,13 @@ enum class Direction {
     LEFT, RIGHT
 }
 
-class SecretEntrance(val pointedNumber: Int, val maximumDialValue: Int, val startingPosition: Int) {
+class SecretEntrance(val pointedNumber: Int, maximumDialValue: Int, startingPosition: Int) {
     var pointedCounter: Int = 0
     var clickedCounter: Int = 0
     var currentPosition: Int = startingPosition
     val numberOfStepsToDoAFullRotation: Int = maximumDialValue + 1
 
-    fun moveTo(direction: Direction, step: Int): Unit {
+    fun moveTo(direction: Direction, step: Int) {
         val stepWithoutRotations = step % numberOfStepsToDoAFullRotation
         val numberOfFullRotations = step / numberOfStepsToDoAFullRotation
 
@@ -45,11 +45,11 @@ class SecretEntrance(val pointedNumber: Int, val maximumDialValue: Int, val star
         return oldPosition < currentPosition
     }
 
-    fun displayDefaultMethodPassword(): Unit {
+    fun displayDefaultMethodPassword() {
         println("The door password with default method is $pointedCounter")
     }
 
-    fun display0x434C49434BMethodPassword(): Unit {
+    fun display0x434C49434BMethodPassword() {
         println("The door password with method 0x434C49434B is ${clickedCounter + pointedCounter}")
     }
 }

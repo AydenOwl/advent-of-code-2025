@@ -3,7 +3,7 @@ package dayTwo
 class GiftShop() {
     var productRanges: MutableList<ProductRange> = mutableListOf<ProductRange>()
 
-    fun addProductRange(productRange: ProductRange): Unit {
+    fun addProductRange(productRange: ProductRange) {
         productRanges.add(productRange)
     }
 

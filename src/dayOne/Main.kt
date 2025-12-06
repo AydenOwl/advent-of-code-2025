@@ -6,7 +6,7 @@ fun main() {
     getDoorPassword()
 }
 
-fun getDoorPassword(): Unit {
+fun getDoorPassword() {
     val secretEntrance = SecretEntrance(0, 99, 50)
 
     File("input_secret_entrance.txt").forEachLine {
