@@ -16,6 +16,6 @@ fun main() {
 
     }
 
-    val finalSum = giftShop.getInvalidSum()
-    println("The invalid sum if $finalSum")
+    println("The invalid sum of repeated twice method is ${giftShop.getInvalidSum(InvalidMethod.REPEATED_TWICE)}")
+    println("The invalid sum of repeated at least twice method is ${giftShop.getInvalidSum(InvalidMethod.REPEATED_AT_LEAST_TWICE)}")
 }

@@ -7,10 +7,10 @@ class GiftShop() {
         productRanges.add(productRange)
     }
 
-    fun getInvalidSum(): Long {
+    fun getInvalidSum(invalidMethod: InvalidMethod): Long {
         var sum: Long = 0
         for (range in productRanges) {
-            sum += range.getInvalidSum()
+            sum += range.getInvalidSum(invalidMethod)
         }
 
         return sum
