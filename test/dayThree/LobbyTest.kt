@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test
 class LobbyTest {
     @Test
     fun `should sum total joltage from providers`() {
-        var lobby = Lobby()
+        val lobby = Lobby()
 
         lobby.addJoltageProvider(FakeProviderFromJoltage(98))
         lobby.addJoltageProvider(FakeProviderFromJoltage(89))
